@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "922252725102",
+    "project_id": "prescriptionhistory-70c35",
+    "storage_bucket": "prescriptionhistory-70c35.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:922252725102:android:151bf14c892b8cbe1e8f7f",
+        "android_client_info": {
+          "package_name": "com.prescripsafe.firebasesignin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "922252725102-ucgncbtrep3j791r2rmnsuifgf6oocov.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.prescripsafe.firebasesignin",
+            "certificate_hash": "b2f6fcfa5a188251682af27b8bb618f85fa3bb51"
+          }
+        },
+        {
+          "client_id": "922252725102-tjejmt2oi716fjp3qeq6i819s933llro.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFrIc8G3i65bDIosi66OsaHHYhynuefSY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "922252725102-tjejmt2oi716fjp3qeq6i819s933llro.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "922252725102-ig4d43nb6m9gssk9uimp5mbep9mb8ij3.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.prescripsafe.firebasesignin"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -3,33 +3,64 @@ import React from 'react';
 
 import { TabBarIcon } from '@/components/navigation/TabBarIcon';
 import { Colors } from '@/constants/Colors';
-import { useColorScheme } from '@/hooks/useColorScheme';
 
 export default function TabLayout() {
-  const colorScheme = useColorScheme();
 
   return (
     <Tabs
       screenOptions={{
-        tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
+        tabBarActiveTintColor: Colors.PRIMARY,
         headerShown: false,
-      }}>
+        tabBarStyle: {
+          backgroundColor: '#f5f5f5',
+          borderTopWidth: 0,
+          borderTopColor: "gray",
+          borderTopLeftRadius: 30, 
+          borderTopRightRadius:30,
+          paddingBottom: 8,
+          paddingTop: 2, 
+          height: 65, 
+        },
+      }}
+      
+      >
       <Tabs.Screen
-        name="index"
+        name="mytrip"
         options={{
           title: 'Home',
           tabBarIcon: ({ color, focused }) => (
-            <TabBarIcon name={focused ? 'home' : 'home-outline'} color={color} />
+            <TabBarIcon name={focused ? 'home-sharp' : 'home-outline'} color={color} />
           ),
+          tabBarLabelStyle:{
+            fontSize: 13, 
+            fontFamily: "outfit"
+          }
         }}
       />
       <Tabs.Screen
-        name="explore"
+        name="discover"
         options={{
-          title: 'Explore',
+          title: 'Discover',
           tabBarIcon: ({ color, focused }) => (
-            <TabBarIcon name={focused ? 'code-slash' : 'code-slash-outline'} color={color} />
+            <TabBarIcon name={focused ? 'globe-sharp' : 'globe-outline'} color={color} />
           ),
+          tabBarLabelStyle:{
+            fontSize: 13, 
+            fontFamily: "outfit"
+          }
+        }}
+      />
+      <Tabs.Screen
+        name="profile"
+        options={{
+          title: 'Profile',
+          tabBarIcon: ({ color, focused }) => (
+            <TabBarIcon name={focused ? 'people-circle' : 'people-circle'} color={color} />
+          ),
+          tabBarLabelStyle:{
+            fontSize: 13, 
+            fontFamily: "outfit"
+          }
         }}
       />
     </Tabs>
